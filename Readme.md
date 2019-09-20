@@ -2,7 +2,7 @@ Project Group:
 
 1) Sanika Dongre
 2) Shruthi Sridharan (added as collaborator: shruthi1111)
-3) Preethi Vijai Lilly (added as collaborator: preethivijai
+3) Preethi Vijai Lilly (added as collaborator: PreethiVijai
 
 The program uses three levels of inheritance: 
 Top level base class: Animal.java - is an abstract class
