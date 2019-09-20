@@ -1,7 +1,7 @@
 Project Group: 
 
 1) Sanika Dongre
-2) Shruthi Sridharan (added as collaborator: shruthi1111)
+2) Shruthi Sridharan (added as collaborator: Shruthi1111)
 3) Preethi Vijai Lilly (added as collaborator: PreethiVijai
 
 The program uses three levels of inheritance: 
