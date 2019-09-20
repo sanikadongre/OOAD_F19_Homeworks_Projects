@@ -22,4 +22,4 @@ Random number generator used in Cat class:
 Based on Math.random(), the responses are printed for both - roam() and makeNoise() methods. 
 
 Final output: 
-Running Zookeeper.java- the output is generated in file: dayatthezoo.txt in the project folder itself
+Running Zookeeper.java- the output is generated in file: dayatthezoo.out in the project folder itself
