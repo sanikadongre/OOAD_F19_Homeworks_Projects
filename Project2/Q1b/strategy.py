@@ -11,16 +11,18 @@ import sys
 from abc import ABC, abstractmethod
 import random
 
+#Interface/Class to use for the implementation of the strategy makeNoise will have specific implementation depending on animal type 
 class NoiseBehavior:
     def __init__(self, name=" "):
         self.name = name 
     def makeNoise(self):
         pass
-
+#Concrete strategy class which implements the makeNoise() from NoiseBehavior
 class LionNoise(NoiseBehavior):
     def makeNoise(self):
         print(self.name + " Lion makes noise LionGrrr.")  
         
+#Concrete strategy class which implements the makeNoise() from NoiseBehavior       
 class CatNoise(NoiseBehavior):        
     def makeNoise(self):
       #use random number generation to select from alternative responses to animal actions
@@ -29,37 +31,43 @@ class CatNoise(NoiseBehavior):
             print(self.name + " Cat makes noise Meow.")
         else:
             print(self.name + " Cat makes noise Meowwww and Meowwww.")
-            
+ 
+#Concrete strategy class which implements the makeNoise() from NoiseBehavior
 class ElephantNoise(NoiseBehavior):
     def makeNoise(self):
         super().makeNoise()
         print(self.name + " Elephant makes noise Mooooo.")
-
+        
+#Concrete strategy class which implements the makeNoise() from NoiseBehavior
 class HippoNoise(NoiseBehavior):
     def makeNoise(self):
         super().makeNoise()
         print(self.name + " Hippo makes noise Hipooo.")
-
+        
+#Concrete strategy class which implements the makeNoise() from NoiseBehavior
 class RhinoNoise(NoiseBehavior):
     def makeNoise(self):
         super().makeNoise()
         print(self.name + " Rhino makes noise Rhinooo.")
 
+#Concrete strategy class which implements the makeNoise() from NoiseBehavior
 class TigerNoise(NoiseBehavior):
      def makeNoise(self):
         super().makeNoise()
         print(self.name + " Tiger makes noise Tigrrrrr.")
-
+#Concrete strategy class which implements the makeNoise() from NoiseBehavior
 class WolfNoise(NoiseBehavior):
     def makeNoise(self):
         super().makeNoise()
         print(self.name + " Wolf makes noise Grrrrr.")
-
+        
+#Concrete strategy class which implements the makeNoise() from NoiseBehavior
 class DogNoise(NoiseBehavior):
      def makeNoise(self):
         super().makeNoise()
         print(self.name + " Dog makes noise Woof.")
     
+#abstract base class for animals
 class Animal():
     def __init__(self, name=" "):
         
