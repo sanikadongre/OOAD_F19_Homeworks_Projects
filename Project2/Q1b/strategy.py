@@ -4,6 +4,8 @@ Created on Tue Oct  1 20:37:41 2019
 
 @author: shrut
 """
+#Reference link:
+#https://refactoring.guru/design-patterns/strategy/python/example
 
 import sys
 from abc import ABC, abstractmethod
