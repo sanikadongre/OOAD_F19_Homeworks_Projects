@@ -1,3 +1,5 @@
+#Reference: https://www.ict.social/python/oop/inheritance-and-polymorphism-in-python
+
 import sys
 from abc import ABC, abstractmethod
 import random
