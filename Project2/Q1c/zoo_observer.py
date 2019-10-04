@@ -5,6 +5,7 @@ import sys
 from abc import ABC, abstractmethod
 import random
 
+#Implementation of observer with announce event
 class ZooAnnouncer():
 
     def __init__(self, zk):
@@ -15,11 +16,13 @@ class ZooAnnouncer():
     def updateAnnouncer(self,value):
         self.value = value
         self.announce_event()
-        
+
+#Responds to change in event by printing it.
     def announce_event(self):
         print("\nHi! This is Zoo Announcer. Zookeeper is going to {} the animals\n".format(self.value))
 
-        
+
+#the main class for creating the list of animals       
 class Animal():
     def __init__(self, name=" "):
         
@@ -44,7 +47,7 @@ class Animal():
     def makeNoise(self):
         pass
     
-
+#Creation of animal subclasses
 class Canine(Animal):
 
 
@@ -187,7 +190,7 @@ class Dog(Canine):
     def roam(self):
         print(self.name + "Dog exercises by stretching and sprinting.")
 
-    
+#The subject Zookeeper which is subscribed by the observer ZooAnnouncer
 class ZooKeeper:
     
       
@@ -235,11 +238,13 @@ class ZooKeeper:
     def removeObs(self, observer):
         print("Zoo Announcer signing off! Have a good day")
         self.observers.remove(observer)
-        
+    
+    #Updating the observer with values
     def notifyObs(self):
         for observer in self.observers:
             observer.updateAnnouncer(self.value)
-            
+    
+#Zookeeper performing tasks sequentially       
     def performTasksSequentially(self,animals):
         self.setValue("wake")
         print("----------- wakeUpAnimals --------------")
@@ -290,6 +295,3 @@ class ZooKeeper:
 
 if __name__ == '__main__':
     zk=ZooKeeper() 
-    
-
-
