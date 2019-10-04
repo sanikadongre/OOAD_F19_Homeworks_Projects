@@ -1,3 +1,6 @@
+#Reference link:
+#https://refactoring.guru/design-patterns/observer/python/example
+
 import sys
 from abc import ABC, abstractmethod
 import random
