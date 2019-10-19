@@ -9,8 +9,28 @@ INSTRUCTIONS TO RUN THE CODE:
 - Execute it.
 - The rental details are calculated and displayed.
 
-
 The required output is printed.
+
+OUTPUT FORMAT:
+(BEGINNING OF THE DAY):
+Day Count
+Tools available count
+Tools that are available
+Customer count
+All necessary details - Type of customer, name, category, tools,accessory, number of nights
+Tool selected and its price
+Transaction record for the customer
+
+(END OF THE DAY):
+Profit made on that day
+Profit made till date
+
+(AFTER 35 DAYS):
+Total rentals made.
+Total profit after 35 days
+Printing the transactions for each customer
+
+JUNIT TEST CASES - Validation
 
 REFERENCES:
 - https://coderanch.com/t/412443/java/subtract-arrayLists 
