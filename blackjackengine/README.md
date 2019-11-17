@@ -7,10 +7,11 @@ Deck
 Card
 Dealer
 Player
-GameEngine
+Hand
+GameDriver- main()
 --------------------------------
 
-Design Patterns:
+Design Patterns yet to implemented:
 Observer
 Factory
 Decorator
@@ -19,7 +20,5 @@ Decorator
 How to run:
 
 1. Command line:
-
-2. GUI-based:
 
 Notes:
