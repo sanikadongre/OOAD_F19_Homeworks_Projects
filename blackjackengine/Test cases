@@ -1,0 +1,53 @@
+Test class 1
+package src;
+
+import org.junit.Test;
+
+import junit.framework.TestCase;
+
+public class CardTest extends TestCase {
+
+@Test
+public void testCard() throws Exception{
+
+Card card1 = new Card(1, Suits.Diamonds, "Ace");
+Card card2 = new Card(11, Suits.Hearts, "Jack");
+Card card3 = new Card(13, Suits.Hearts, "King");
+
+assertEquals(card1.getRank(), 1);
+assertEquals(card2.getRank(), 10); // card value is set as 10 by default
+assertEquals(card3.getRank(), 10); // card value is set as 10 by default
+
+assertEquals(card1.getFace(), "Ace");
+assertEquals(card2.getFace(), "Jack");
+assertEquals(card3.getFace(), "King");
+
+}
+}
+
+Test class 2: 
+package src;
+
+import org.junit.Test;
+
+import junit.framework.TestCase;
+
+public class DeckTest extends TestCase {
+
+@Test
+public void testDeck() throws Exception{
+Deck deck = new Deck();
+assertEquals(deck.getCards().size(), 52); //create all 52 cards
+}
+
+@Test
+public void testDeckshuffle() throws Exception{
+
+Deck deck = new Deck();
+assertEquals(deck.getCards().size(), 52); //create all 52 cards
+Card card = deck.getCards().get(0);
+deck.shuffleDeck(deck.getCards());
+assertNotSame(card, deck.getCards().get(0)); //shuffledDeck
+assertEquals(deck.getCards().size(), 52); //shuffled all 52 cards
+}
+}
